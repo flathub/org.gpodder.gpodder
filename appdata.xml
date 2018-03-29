@@ -44,11 +44,11 @@
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
    <screenshots>
-​    <screenshot type="default">
-​      <caption>The main window</caption>
-​      <image>https://raw.githubusercontent.com/flathub/org.gpodder.gpodder/master/screenshot.png</image>
-​    </screenshot>
-​  </screenshots>
+    <screenshot type="default">
+      <caption>The main window</caption>
+      <image>https://raw.githubusercontent.com/flathub/org.gpodder.gpodder/master/screenshot.png</image>
+    </screenshot>
+  </screenshots>
   <releases>
     <release version="3.10.1" date="2018-02-19"/>
   </releases>
