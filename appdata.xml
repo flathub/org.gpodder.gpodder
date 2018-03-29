@@ -11,9 +11,6 @@
   </description>
   <launchable type="desktop-id">org.gpodder.gpodder.desktop</launchable>
   <url type="homepage">https://www.gpodder.org</url>
-  <screenshots>
-    <screenshot type="default">http://gpodder.org/images/full_desktop.png</screenshot>
-  </screenshots>
   <provides>
     <binary>gpodder</binary>
   </provides>
@@ -46,6 +43,12 @@
     <content_attribute id="money-purchasing">none</content_attribute>
     <content_attribute id="money-gambling">none</content_attribute>
   </content_rating>
+   <screenshots>
+​    <screenshot type="default">
+​      <caption>The main window</caption>
+​      <image>https://raw.githubusercontent.com/flathub/org.gpodder.gpodder/master/screenshot.png</image>
+​    </screenshot>
+​  </screenshots>
   <releases>
     <release version="3.10.1" date="2018-02-19"/>
   </releases>
