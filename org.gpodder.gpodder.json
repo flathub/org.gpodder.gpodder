@@ -12,7 +12,8 @@
     "--share=ipc",
     "--share=network",
     "--own-name=org.gpodder",
-    "--talk-name=org.gtk.vfs.*"
+    "--talk-name=org.gtk.vfs.*",
+    "--filesystem=home"
   ],
   "cleanup": [
     "/include",
