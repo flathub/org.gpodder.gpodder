@@ -113,6 +113,7 @@
         "mv $FLATPAK_DEST/share/applications/gpodder-url-handler.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.gpodder-url-handler.desktop"
       ],
       "post-install": [
+        "rm -fr $FLATPAK_DEST/share/icons/hicolor/16x16/apps/gpodder.ico",
         "install -Dm644 appdata.xml $FLATPAK_DEST/share/metainfo/$FLATPAK_ID.appdata.xml"
       ]
     }
