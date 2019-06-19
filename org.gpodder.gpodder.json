@@ -1,7 +1,7 @@
 {
   "app-id": "org.gpodder.gpodder",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.28",
+  "runtime-version": "3.32",
   "sdk": "org.gnome.Sdk",
   "command": "gpodder",
   "rename-icon": "gpodder",
@@ -62,7 +62,7 @@
       ],
       "build-options": {
         "env": {
-          "PYTHON": "python3.5"
+          "PYTHON": "python3.7"
         }
       }
     },
