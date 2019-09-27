@@ -99,8 +99,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/gpodder/gpodder/archive/3.10.9.tar.gz",
-          "sha256": "ab7eab4e9e63556c463a9efdcf0b26069f56c047d7cef7fd22931b71ba025dbf"
+          "url": "https://github.com/gpodder/gpodder/archive/3.10.13.tar.gz",
+          "sha256": "afb8dd2b179cf8aa1d75751d4a534c7d45e652e5a2d19540551ac8d1150cd020"
         },
         {
           "type": "file",
