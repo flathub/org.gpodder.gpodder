@@ -1,7 +1,7 @@
 {
   "app-id": "org.gpodder.gpodder",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "3.36",
+  "runtime-version": "3.38",
   "sdk": "org.gnome.Sdk",
   "command": "gpodder",
   "rename-icon": "gpodder",
@@ -28,8 +28,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://pypi.python.org/packages/84/30/80932401906eaf787f2e9bd86dc458f1d2e75b064b4c187341f29516945c/python-magic-0.4.15.tar.gz#md5=e384c95a47218f66c6501cd6dd45ff59",
-          "sha256": "f3765c0f582d2dfc72c15f3b5a82aecfae9498bd29ca840d72f37d7bd38bfcd5"
+          "url": "https://files.pythonhosted.org/packages/e3/85/1aff76b966622868a73717abd8b501a3c91890e23a65e5f574ff6df1970f/python-magic-0.4.18.tar.gz",
+          "sha256": "b757db2a5289ea3f1ced9e60f072965243ea43a2221430048fd8cacab17be0ce"
         }
       ],
       "buildsystem": "simple",
@@ -56,8 +56,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://pypi.python.org/packages/ad/1b/76adc363212c642cabbf9329457a918308c0b9b5d38ce04d541a67255174/dbus-python-1.2.4.tar.gz",
-          "sha256": "e2f1d6871f74fba23652e51d10873e54f71adab0525833c19bad9e99b1b2f9cc"
+          "url": "https://files.pythonhosted.org/packages/62/7e/d4fb56a1695fa65da0c8d3071855fa5408447b913c58c01933c2f81a269a/dbus-python-1.2.16.tar.gz",
+          "sha256": "11238f1d86c995d8aed2e22f04a1e3779f0d70e587caffeab4857f3c662ed5a4"
         }
       ],
       "build-options": {
@@ -71,8 +71,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/gpodder/podcastparser/archive/0.6.4.tar.gz",
-          "sha256": "fac02a56b755f81c11f186bec5a6f813671e600f413ade7ea9690e47eb27bd69"
+          "url": "https://github.com/gpodder/podcastparser/archive/0.6.6.tar.gz",
+          "sha256": "b36adead23adb138aa12504740d8b875c2eda581bd72cdcb18a579cb5e1ec2fb"
         }
       ],
       "buildsystem": "simple",
@@ -99,8 +99,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/gpodder/gpodder/archive/3.10.16.tar.gz",
-          "sha256": "ff1441d7fc1c0eface0f4136fb71c4a8d2615486e5569fad2695df6bf9622d7f"
+          "url": "https://github.com/gpodder/gpodder/archive/3.10.17.tar.gz",
+          "sha256": "36a04e4d6a81f50b50d1f7691955d4f460e72f71b9519dad42b805a987434210"
         },
         {
           "type": "file",
