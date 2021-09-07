@@ -22,86 +22,16 @@
     "/lib/pkgconfig"
   ],
   "modules": [
+    "pypi-deps.json",
     "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
-    "python3-requests.json",
-    {
-      "name": "magic",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://files.pythonhosted.org/packages/e3/85/1aff76b966622868a73717abd8b501a3c91890e23a65e5f574ff6df1970f/python-magic-0.4.18.tar.gz",
-          "sha256": "b757db2a5289ea3f1ced9e60f072965243ea43a2221430048fd8cacab17be0ce"
-        }
-      ],
-      "buildsystem": "simple",
-      "build-commands": [
-        "python3 setup.py install --prefix=$FLATPAK_DEST"
-      ]
-    },
-    {
-      "name": "eyed3",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://pypi.python.org/packages/d0/db/22897cbef39c66df65ba77c6f74c95296e6bba705f22c3f414927d02931e/eyeD3-0.8.4.tar.gz#md5=e65ad1f53d24735b1d8a25263fd37c7d",
-          "sha256": "9a8f334c640813647062aaa46c52d65641bec6f7d7e73e51441c95d3d93c3f43"
-        }
-      ],
-      "buildsystem": "simple",
-      "build-commands": [
-        "python3 setup.py install --prefix=$FLATPAK_DEST"
-      ]
-    },
-    {
-      "name": "python-dbus",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://files.pythonhosted.org/packages/62/7e/d4fb56a1695fa65da0c8d3071855fa5408447b913c58c01933c2f81a269a/dbus-python-1.2.16.tar.gz",
-          "sha256": "11238f1d86c995d8aed2e22f04a1e3779f0d70e587caffeab4857f3c662ed5a4"
-        }
-      ],
-      "build-options": {
-        "env": {
-          "PYTHON": "python3.7"
-        }
-      }
-    },
-    {
-      "name": "podcastparser",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/gpodder/podcastparser/archive/0.6.6.tar.gz",
-          "sha256": "b36adead23adb138aa12504740d8b875c2eda581bd72cdcb18a579cb5e1ec2fb"
-        }
-      ],
-      "buildsystem": "simple",
-      "build-commands": [
-        "python3 setup.py install --prefix=$FLATPAK_DEST"
-      ]
-    },
-    {
-      "name": "mygpoclient",
-      "sources": [
-        {
-          "type": "archive",
-          "url": "https://github.com/gpodder/mygpoclient/archive/1.8.tar.gz",
-          "sha256": "65fcb3ab220a2ba2d32a77f969b423a2f663413b6c485b7b02e5a955b28e68d2"
-        }
-      ],
-      "buildsystem": "simple",
-      "build-commands": [
-        "python3 setup.py install --prefix=$FLATPAK_DEST"
-      ]
-    },
     {
       "name": "gpodder",
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/gpodder/gpodder/archive/3.10.19.tar.gz",
-          "sha256": "4a2e6fcc7e674a2b5731ac3cda4a18ccec462c66e8d4a7f0b69a296b0f8775ac"
+
+          "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.10.20.tar.gz",
+          "sha256": "994f7f04a31c68fb3479ad000d4e9af2c0d8caf02c161ede71c7c2cd4b9bc804"
         },
         {
           "type": "file",
