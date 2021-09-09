@@ -22,7 +22,7 @@
     "/lib/pkgconfig"
   ],
   "modules": [
-    "pypi-deps.json",
+    "python3-requirements.json",
     "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
     {
       "name": "gpodder",
