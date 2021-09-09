@@ -22,7 +22,7 @@
     "/lib/pkgconfig"
   ],
   "modules": [
-    "pypi-deps.json",
+    "python3-requirements.json",
     "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
     {
       "name": "gpodder",
@@ -30,8 +30,8 @@
         {
           "type": "archive",
 
-          "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.10.20.tar.gz",
-          "sha256": "994f7f04a31c68fb3479ad000d4e9af2c0d8caf02c161ede71c7c2cd4b9bc804"
+          "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.10.21.tar.gz",
+          "sha256": "014e619de64d3e3dc8493929af8007b3caf09dd77e153bf778f1708d55946878"
         },
         {
           "type": "file",
