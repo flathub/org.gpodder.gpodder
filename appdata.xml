@@ -51,6 +51,18 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="3.11.0" date="2022-07-30">
+      <description>
+        <p>This release contains a year's worth of improvements. Major changes:</p>
+        <ul>
+          <li>Warning: There is a database schema update (See "Moving to an older gPodder release" in the user manual at gpodder.github.io for how to rollback)</li>
+          <li>Numerous bug fixes</li>
+          <li>Performance improvements</li>
+          <li>A new preferences dialog</li>
+          <li>Support again syncing to mtp:// and iPod devices on Linux</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.10.21" date="2021-07-20"/>
     <release version="3.10.20" date="2021-06-06"/>
     <release version="3.10.19" date="2021-04-15"/>
