@@ -1,14 +1,14 @@
 {
   "app-id": "org.gpodder.gpodder",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "42",
+  "runtime-version": "43",
   "sdk": "org.gnome.Sdk",
   "command": "gpodder",
   "rename-icon": "gpodder",
   "copy-icon": true,
   "rename-desktop-file": "gpodder.desktop",
   "finish-args": [
-    "--socket=x11",
+    "--socket=fallback-x11",
     "--socket=wayland",
     "--share=ipc",
     "--share=network",
@@ -18,24 +18,37 @@
   ],
   "cleanup": [
     "/include",
-    "/lib/debug",
     "/lib/pkgconfig"
   ],
   "modules": [
     "python3-requirements.json",
     "shared-modules/libappindicator/libappindicator-gtk3-introspection-12.10.json",
     {
+      "name": "dbus-python",
+      "buildsystem": "autotools",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://dbus.freedesktop.org/releases/dbus-python/dbus-python-1.3.2.tar.gz",
+          "sha256": "ad67819308618b5069537be237f8e68ca1c7fcc95ee4a121fe6845b1418248f8"
+        }
+      ]
+    },
+    {
       "name": "gpodder",
       "sources": [
         {
           "type": "archive",
-
-          "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.11.0.tar.gz",
-          "sha256": "c96a3332e61e8277475497ec24fe0918c5cafc580a2f85fc7b34c2fd989873de"
+          "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.11.1.tar.gz",
+          "sha256": "c24fb3ef70b5acf43c07e6dd4e78c309e1cbacff621eb59f73c137b9597c6e87"
         },
         {
-          "type": "file",
-          "path": "appdata.xml"
+          "type": "patch",
+          "path": "0001-appdata-Fix-syntax-add-3.9-series-release-dates.patch"
+        },
+        {
+          "type": "patch",
+          "path": "0002-appdata-Add-release-3.11.1.patch"
         }
       ],
       "buildsystem": "simple",
@@ -44,8 +57,7 @@
         "mv $FLATPAK_DEST/share/applications/gpodder-url-handler.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.gpodder-url-handler.desktop"
       ],
       "post-install": [
-        "rm -fr $FLATPAK_DEST/share/icons/hicolor/16x16/apps/gpodder.ico",
-        "install -Dm644 appdata.xml $FLATPAK_DEST/share/metainfo/$FLATPAK_ID.appdata.xml"
+        "rm -fr $FLATPAK_DEST/share/icons/hicolor/16x16/apps/gpodder.ico"
       ]
     }
   ]
