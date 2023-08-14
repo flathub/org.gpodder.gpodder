@@ -54,9 +54,7 @@
       "buildsystem": "simple",
       "build-commands": [
         "make install PREFIX=$FLATPAK_DEST",
-        "mv $FLATPAK_DEST/share/applications/gpodder-url-handler.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.gpodder-url-handler.desktop"
-      ],
-      "post-install": [
+        "mv $FLATPAK_DEST/share/applications/gpodder-url-handler.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.gpodder-url-handler.desktop",
         "rm -fr $FLATPAK_DEST/share/icons/hicolor/16x16/apps/gpodder.ico"
       ]
     }
