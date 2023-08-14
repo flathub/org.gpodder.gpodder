@@ -41,14 +41,6 @@
           "type": "archive",
           "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.11.1.tar.gz",
           "sha256": "c24fb3ef70b5acf43c07e6dd4e78c309e1cbacff621eb59f73c137b9597c6e87"
-        },
-        {
-          "type": "patch",
-          "path": "0001-appdata-Fix-syntax-add-3.9-series-release-dates.patch"
-        },
-        {
-          "type": "patch",
-          "path": "0002-appdata-Add-release-3.11.1.patch"
         }
       ],
       "buildsystem": "simple",
