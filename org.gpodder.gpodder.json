@@ -39,8 +39,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.11.3.tar.gz",
-          "sha256": "9528edb38666e6fc52c904308f1467d6155a1bb5c7fd61da13535dea62071731"
+          "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.11.4.tar.gz",
+          "sha256": "8022a6c29157dc287b5661f8915d04404767c33b6858e8d1a6c728904f8dae55"
         }
       ],
       "buildsystem": "simple",
