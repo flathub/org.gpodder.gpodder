@@ -1,7 +1,7 @@
 {
   "app-id": "org.gpodder.gpodder",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "45",
+  "runtime-version": "47",
   "sdk": "org.gnome.Sdk",
   "command": "gpodder",
   "rename-icon": "gpodder",
@@ -45,6 +45,10 @@
         {
           "type": "patch",
           "path": "fix-appdata.patch"
+        },
+        {
+          "type": "patch",
+          "path": "importlib.patch"
         }
       ],
       "buildsystem": "simple",
