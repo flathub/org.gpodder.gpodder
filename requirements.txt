@@ -1,0 +1,20 @@
+# Combined gPodder and yt-dlp python dependencies
+# yt-dlp does not have requirements.txt any more (deps are in pyproject.toml,
+# which flatpak-pip generator does not support), so we list its missing
+# dependencies here.
+#
+# gPodder dependencies
+# dbus-python is in the main build manifest
+html5lib==1.1
+mutagen==1.46.0
+mygpoclient==1.9
+podcastparser==0.6.10
+# requests[socks]==2.31.0  # Use the later requests from yt-dlp
+urllib3==2.0.6
+# yt-dlp + deps
+brotli
+certifi
+pycryptodomex
+requests>=2.32.2,<3
+websockets
+yt-dlp
