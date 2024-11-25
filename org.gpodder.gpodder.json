@@ -1,7 +1,7 @@
 {
   "app-id": "org.gpodder.gpodder",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "45",
+  "runtime-version": "47",
   "sdk": "org.gnome.Sdk",
   "command": "gpodder",
   "rename-icon": "gpodder",
@@ -41,6 +41,14 @@
           "type": "archive",
           "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.11.4.tar.gz",
           "sha256": "8022a6c29157dc287b5661f8915d04404767c33b6858e8d1a6c728904f8dae55"
+        },
+        {
+          "type": "patch",
+          "path": "fix-appdata.patch"
+        },
+        {
+          "type": "patch",
+          "path": "importlib.patch"
         }
       ],
       "buildsystem": "simple",
