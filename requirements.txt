@@ -6,15 +6,18 @@
 # gPodder dependencies
 # dbus-python is in the main build manifest
 html5lib==1.1
-mutagen==1.46.0
-mygpoclient==1.9
+mutagen==1.47.0
+mygpoclient==1.10
 podcastparser==0.6.10
-# requests[socks]==2.31.0  # Use the later requests from yt-dlp
-urllib3==2.0.6
+requests[socks]==2.32.3
+urllib3==2.2.2
+# Needed for gPodder release build
+build
+installer
 # yt-dlp + deps
 brotli
 certifi
 pycryptodomex
-requests>=2.32.2,<3
-websockets
+# requests>=2.32.2,<3  # Use requests version from gPodder deps
+websockets>=13.0
 yt-dlp

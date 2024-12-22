@@ -1,0 +1,46 @@
+From a3be651918994cfddc92951e214d17dd113cda5c Mon Sep 17 00:00:00 2001
+From: Eric Le Lay <elelay@macports.org>
+Date: Fri, 20 Dec 2024 13:01:38 +0100
+Subject: [PATCH] update flathub metainfo
+
+---
+ .../metainfo/org.gpodder.gpodder.appdata.xml  | 23 +++++++++++++++++++
+ 1 file changed, 23 insertions(+)
+
+diff --git a/share/metainfo/org.gpodder.gpodder.appdata.xml b/share/metainfo/org.gpodder.gpodder.appdata.xml
+index ac0a00b8..c59e3361 100644
+--- a/share/metainfo/org.gpodder.gpodder.appdata.xml
++++ b/share/metainfo/org.gpodder.gpodder.appdata.xml
+@@ -26,6 +26,29 @@
+     </screenshot>
+   </screenshots>
+   <releases>
++    <release version="3.11.5" date="2024-12-17">
++      <description>
++        <p>Changes:</p>
++        <ul>
++          <li>Replace context GtkMenus with GtkPopovers (#1293)</li>
++          <li>Add PotPlayer Support For Windows (#1583)</li>
++          <li>New subscription statistics extension (#1590)</li>
++          <li>Group subscriptions in OPML import/export (#1658)</li>
++          <li>Add `path.alternate` setting so users can append to PATH inside gpodder (#1649)</li>
++          <li>Limit the length of UTF-8 filenames (#1645)</li>
++          <li>Sort episodes by published date when sending to folder (#1624)</li>
++          <li>Add view menu podcast and episode list checkboxes to preferences (#1618)</li>
++          <li>New podverse search extension (#1615)</li>
++          <li>SendTo automatic rename filename (#1620)</li>
++          <li>Add socks proxy to settings and network tab in Preferences (#1592)</li>
++          <li>Extract YouTube channel ID from URL (#1603)</li>
++          <li>Modernize userappsdirs (#1601)</li>
++          <li>Add color scheme (dark and light mode) support (#1595)</li>
++          <li>Change %d to %ld in Windows launcher (#1589)</li>
++       <li>Add forceDownload action to Downloads context menu and toolbar</li>
++        </ul>
++      </description>
++    </release>
+     <release version="3.11.4" date="2023-10-11">
+       <description>
+         <p>This release only updates dependencies in the Windows and Mac builds</p>
+-- 
+2.45.2
+

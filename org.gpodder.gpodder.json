@@ -39,16 +39,12 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.11.4.tar.gz",
-          "sha256": "8022a6c29157dc287b5661f8915d04404767c33b6858e8d1a6c728904f8dae55"
+          "url": "https://github.com/gpodder/gpodder/archive/refs/tags/3.11.5.tar.gz",
+          "sha256": "c09de56290589f5d66592d79acdfb8b70e76deab6df590715e4556c6d2d2068c"
         },
         {
           "type": "patch",
-          "path": "fix-appdata.patch"
-        },
-        {
-          "type": "patch",
-          "path": "importlib.patch"
+          "path": "update-flathub-metainfo.patch"
         }
       ],
       "buildsystem": "simple",
