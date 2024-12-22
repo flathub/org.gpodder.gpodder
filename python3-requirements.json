@@ -26,13 +26,13 @@
             "name": "python3-mutagen",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"mutagen==1.46.0\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"mutagen==1.47.0\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/03/ee/114d7016d2e34f341e212fefb5e7bd87785077ebcfff0ad23a497c70eea1/mutagen-1.46.0-py3-none-any.whl",
-                    "sha256": "8af0728aa2d5c3ee5a727e28d0627966641fddfe804c23eabb5926a4d770aed5"
+                    "url": "https://files.pythonhosted.org/packages/b0/7a/620f945b96be1f6ee357d211d5bf74ab1b7fe72a9f1525aafbfe3aee6875/mutagen-1.47.0-py3-none-any.whl",
+                    "sha256": "edd96f50c5907a9539d8e5bba7245f62c9f520aef333d13392a79a4f70aca719"
                 }
             ]
         },
@@ -40,13 +40,13 @@
             "name": "python3-mygpoclient",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"mygpoclient==1.9\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"mygpoclient==1.10\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/05/79/24153441cdc65289622a1a111fc0a9c15c8133147299716a8df2c9731688/mygpoclient-1.9-py3-none-any.whl",
-                    "sha256": "da8aa7f4e7004a1b2747267c1dae326d87fbdb68b6786580933add28608dea92"
+                    "url": "https://files.pythonhosted.org/packages/e3/9f/8f450e33f63c394daf4ee692df45783033dcc53fbff87e65b44363c1da2f/mygpoclient-1.10-py3-none-any.whl",
+                    "sha256": "53ca113b257c178bf538264dacfcc2a7404e885e53bf93855c0affd83ffb6175"
                 }
             ]
         },
@@ -65,16 +65,55 @@
             ]
         },
         {
-            "name": "python3-urllib3",
+            "name": "python3-requests",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"urllib3==2.0.6\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"requests[socks]==2.32.3\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/26/40/9957270221b6d3e9a3b92fdfba80dd5c9661ff45a664b47edd5d00f707f5/urllib3-2.0.6-py3-none-any.whl",
-                    "sha256": "7a7c7003b000adf9e7ca2a377c9688bbc54ed41b985789ed576570342a375cd2"
+                    "url": "https://files.pythonhosted.org/packages/8d/59/b4572118e098ac8e46e399a1dd0f2d85403ce8bbaad9ec79373ed6badaf9/PySocks-1.7.1-py3-none-any.whl",
+                    "sha256": "2725bd0a9925919b9b51739eea5f9e2bae91e83288108a9ad338b2e3a4435ee5"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl",
+                    "sha256": "1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f2/4f/e1808dc01273379acc506d18f1504eb2d299bd4131743b9fc54d7be4df1e/charset_normalizer-3.4.0.tar.gz",
+                    "sha256": "223217c3d4f82c3ac5e29032b3f1c2eb0fb591b72161f86d93f5719079dae93e"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
+                    "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
+                    "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ca/1c/89ffc63a9605b583d5df2be791a27bc1a42b7c32bab68d3c8f2f73a98cd4/urllib3-2.2.2-py3-none-any.whl",
+                    "sha256": "a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472"
+                }
+            ]
+        },
+        {
+            "name": "python3-urllib3",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"urllib3==2.2.2\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ca/1c/89ffc63a9605b583d5df2be791a27bc1a42b7c32bab68d3c8f2f73a98cd4/urllib3-2.2.2-py3-none-any.whl",
+                    "sha256": "a448b2f64d686155468037e1ace9f2d2199776e17f0a46610480d311f73e3472"
                 }
             ]
         },
@@ -101,8 +140,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/12/90/3c9ff0512038035f59d279fddeb79f5f1eccd8859f06d6163c58798b9487/certifi-2024.8.30-py3-none-any.whl",
-                    "sha256": "922820b53db7a7257ffbda3f597266d435245903d80737e34f8a45ff3e3230d8"
+                    "url": "https://files.pythonhosted.org/packages/a5/32/8f6669fc4798494966bf446c8c4a162e0b5d893dff088afddf76414f70e1/certifi-2024.12.14-py3-none-any.whl",
+                    "sha256": "1275f7a45be9464efc1173084eaa30f866fe2e47d389406136d332ed4967ec56"
                 }
             ]
         },
@@ -121,44 +160,10 @@
             ]
         },
         {
-            "name": "python3-requests",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"requests>=2.32.2,<3\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/12/90/3c9ff0512038035f59d279fddeb79f5f1eccd8859f06d6163c58798b9487/certifi-2024.8.30-py3-none-any.whl",
-                    "sha256": "922820b53db7a7257ffbda3f597266d435245903d80737e34f8a45ff3e3230d8"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f2/4f/e1808dc01273379acc506d18f1504eb2d299bd4131743b9fc54d7be4df1e/charset_normalizer-3.4.0.tar.gz",
-                    "sha256": "223217c3d4f82c3ac5e29032b3f1c2eb0fb591b72161f86d93f5719079dae93e"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/76/c6/c88e154df9c4e1a2a66ccf0005a88dfb2650c1dffb6f5ce603dfbd452ce3/idna-3.10-py3-none-any.whl",
-                    "sha256": "946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f9/9b/335f9764261e915ed497fcdeb11df5dfd6f7bf257d4a6a2a686d80da4d54/requests-2.32.3-py3-none-any.whl",
-                    "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/26/40/9957270221b6d3e9a3b92fdfba80dd5c9661ff45a664b47edd5d00f707f5/urllib3-2.0.6-py3-none-any.whl",
-                    "sha256": "7a7c7003b000adf9e7ca2a377c9688bbc54ed41b985789ed576570342a375cd2"
-                }
-            ]
-        },
-        {
             "name": "python3-websockets",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"websockets\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"websockets>=13.0\" --no-build-isolation"
             ],
             "sources": [
                 {
@@ -177,8 +182,8 @@
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/64/22/1918d2c8c123e9157efd7c2063ea89b4826f904d67b17e77152862ac3347/yt_dlp-2024.11.18-py3-none-any.whl",
-                    "sha256": "b9741695911dc566498b5f115cdd6b1abbc5be61cb01fd98abe649990a41656c"
+                    "url": "https://files.pythonhosted.org/packages/42/5b/e39cb315ce5be55cfd1ebef707dc2d8e4f02c6c6f8b61752076c67c8427f/yt_dlp-2024.12.13-py3-none-any.whl",
+                    "sha256": "5a16b7511e8500cbb13ff0babc9c6deb1e049dc1c854a51738aad2529167fcdf"
                 }
             ]
         }
