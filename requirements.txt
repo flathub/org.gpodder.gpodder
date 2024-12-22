@@ -11,6 +11,9 @@ mygpoclient==1.10
 podcastparser==0.6.10
 requests[socks]==2.32.3
 urllib3==2.2.2
+# Needed for gPodder release build
+build
+installer
 # yt-dlp + deps
 brotli
 certifi
