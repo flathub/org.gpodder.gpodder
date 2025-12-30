@@ -61,6 +61,10 @@
         {
           "type": "patch",
           "path": "update-flathub-metainfo.patch"
+        },
+        {
+          "type": "patch",
+          "path": "yt-dlp-quickjs.patch"
         }
       ],
       "buildsystem": "simple",
