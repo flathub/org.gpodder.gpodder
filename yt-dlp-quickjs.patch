@@ -1,0 +1,26 @@
+From 4fabba6eee530d5c1465c161200c4500b08fb8ac Mon Sep 17 00:00:00 2001
+From: Teemu Ikonen <tpikonen@gmail.com>
+Date: Tue, 30 Dec 2025 20:23:13 +0200
+Subject: [PATCH] youtube-dl: Use quickjs and EJS from github in yt-dlp
+
+This is needed to for YouTube support.
+---
+ share/gpodder/extensions/youtube-dl.py | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/share/gpodder/extensions/youtube-dl.py b/share/gpodder/extensions/youtube-dl.py
+index ed36de00..838370d6 100644
+--- a/share/gpodder/extensions/youtube-dl.py
++++ b/share/gpodder/extensions/youtube-dl.py
+@@ -301,6 +301,8 @@ class gPodderYoutubeDL(download.CustomDownloader):
+             'cachedir': cachedir,
+             'noprogress': True,  # prevent progress bar from appearing in console
+         }
++        self._ydl_opts['js_runtimes'] = {'quickjs': {'path': '/app/bin/qjs'}}
++        self._ydl_opts['remote_components'] = ['ejs:github']
+         # prevent escape codes in desktop notifications on errors
+         if program_name == 'yt-dlp':
+             self._ydl_opts['color'] = 'no_color'
+-- 
+2.47.3
+
