@@ -1,7 +1,7 @@
 {
   "app-id": "org.gpodder.gpodder",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "49",
+  "runtime-version": "51",
   "sdk": "org.gnome.Sdk",
   "command": "gpodder",
   "rename-icon": "gpodder",
@@ -14,6 +14,7 @@
     "--share=network",
     "--own-name=org.gpodder",
     "--talk-name=org.gtk.vfs.*",
+    "--talk-name=org.kde.StatusNotifierWatcher",
     "--filesystem=home"
   ],
   "cleanup": [
@@ -45,8 +46,8 @@
       "sources" : [
         {
           "type" : "archive",
-          "url" : "https://bellard.org/quickjs/quickjs-2025-09-13-2.tar.xz",
-          "sha256" : "996c6b5018fc955ad4d06426d0e9cb713685a00c825aa5c0418bd53f7df8b0b4"
+          "url" : "https://bellard.org/quickjs/quickjs-2026-06-04.tar.xz",
+          "sha256" : "b376e839b322978313d929fd20663b11ba58b75df5a46c126dd19ea2fa70ad2a"
         }
       ]
     },
